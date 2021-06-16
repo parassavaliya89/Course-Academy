@@ -1,0 +1,326 @@
+/*font-family: 'Lobster', cursive;*/
+
+.fheading{
+  font-family: 'Lobster', cursive;
+  
+
+}
+
+.subtopic{
+  
+}
+
+.writing{
+  padding: 10% 0%;
+}
+
+.feature{
+  margin: 0% 5%;
+  
+}
+
+#feature{
+ 
+
+}
+
+
+.featureimage{
+  text-align: center;
+  width: 400px;
+}
+
+.feature-box{
+  
+  padding: 10px  ;
+  margin-top: 50px;
+  padding-left: 5px;
+ 
+}
+
+
+.mainpage{ 
+
+  margin: auto;     
+}
+
+
+.mainfont{
+  color: white;
+  padding: 7% 5%;  
+  font-family: 'Lobster', cursive;
+}
+
+
+
+.searchbox{
+  float: right;
+}
+
+.maibtn{
+  
+  margin-left:10%;
+}
+
+.maintitle{
+  padding-bottom: 5px;
+  font-size: 50px;
+}
+
+
+.brandname{
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.searchbox{
+  
+  
+  
+  
+}
+
+.searchtext{
+  
+  border: none;
+  outline: none;
+  width: 0px;
+  padding: 0px;
+  margin: 0px;
+  background: none;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0rem;
+}
+
+.searchbtn{
+  background: none;
+  border: none;
+  outline: none;
+  
+}
+
+.searchbox:focus-within .searchtext{
+  width: 200px;
+  padding: 2px 1px;
+  background: none;
+}
+.searchbox:focus-within .searchbtn{
+  border: none;
+  outline: none; 
+  color: black; 
+}
+.searchbox:focus-within{
+  background: white;
+}
+
+
+
+
+
+
+
+.navname{
+  color: white;
+  font-size: large ;
+}
+
+.laptop{
+  
+  width: 100%;   
+}
+
+
+.mainimage{  
+ 
+  padding-left: 8%;
+  
+  padding-bottom: 14%;
+
+  padding-top: 3%;
+
+
+}
+
+
+
+.frontpage{
+  background-image: url("../Photos/background2.png");
+
+    
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+  
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#feature{
+  padding: 1% 7%;
+  padding-bottom: 7%;
+}
+
+.symbol{
+  margin: 5%;
+}
+
+.headingmain{
+  color: white;
+  padding: 5%;
+}
+
+
+.heading{
+  text-align: center;
+}
+
+
+
+.navbar a::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+.teacher  {
+ background-color: #ebf3ff;       
+ padding-left: 5%;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ padding-right: 0px;
+ margin-right: 0px;               
+}
+
+
+.teacherheading{
+  padding: 10% 5%;
+}
+
+.theading{
+
+  font-size: 50px;
+
+}
+
+.tcaption{
+  font-size: 22px;
+}
+
+
+.social{
+  background-color: rgb(71, 70, 70);
+  text-align: center;
+}
+
+.sicon{
+  color: white;
+  margin: 2% 5%;
+}
+
+
+
+.flast{
+  background-image: url(../Photos/laptopbook.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 50%;
+  padding-right: 5%;
+  padding-top: 7%;
+  padding-bottom: 28%;
+  
+}
+
+.dropdown-menu{
+  right: 0;
+  left: auto;
+}
+
+
+.course1{
+  margin-top:10px;
+  
+  
+}
+
+.img1{
+  height: 150.484;
+  width: 286.656;
+}
+
+
+
+
+
+
+.fromCity{
+  border: none;
+  outline: none;
+}
+
+.fromCity:focus {
+  border: none;
+  outline: none;
+}
+
+.innerbox{
+  border: 2px solid black;
+  display: block;
+  width: 250px;
+  margin: 5% 5%;
+}
+
+
+.coursebtn{
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+
+.searchbar{
+  background-color: white;
+  display: block;
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  border-radius: 25px;
+
+}
+
+.stext{
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.sbtn{
+  color: black;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+
+.msg{
+  display: block;
+  position: absolute;
+  top: 9%;
+  left: 1%;
+  right: 1%;
+}

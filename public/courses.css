@@ -1,0 +1,52 @@
+.ruppess{
+    font-weight: bold;
+}
+
+.course1{
+    margin: 2% 1%;
+}
+
+.img1{   
+      width: 215px;
+      height: 112.88px;
+}
+
+.view{
+    text-align: center;
+}
+
+
+.coursebtn{
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .dropdown-menu{
+    right: 0;
+    left: auto;
+  }
+
+
+  .selectbtn{
+     margin: 2% 0%;
+     margin-right: 0px;
+     background: none;
+     border: none;
+     outline: none;
+    
+  }
+
+  .sheading{
+      font-size: 20px;
+  }
+
+
+  .sbox{
+    border-right: 2px solid black;
+
+  }
+
+  .star{
+    color: gold;
+  }

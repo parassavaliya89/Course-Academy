@@ -1,0 +1,113 @@
+.btn1{
+    width: 400px;
+    margin:1% 1%;
+}
+
+
+.coursepic{
+    margin: 2% 5%;
+    background-color: white;
+    padding: 2% 2%;
+    margin-bottom: 0px;
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+}
+
+.course{
+    background-color: rgb(19, 18, 18);
+}
+
+
+
+.ctitle{
+    color: white;
+}
+
+.csubtitle,.cdescription{
+    color: white;
+    font-weight: normal;
+}
+
+.author,.lecture{
+    color: white;
+}
+
+.coursedetails{
+    margin: 5% 0%;
+    padding: 2% 0%;
+
+}
+.cdetails{
+    padding: 3px;
+}
+
+.coursevideo{
+    padding: 5% 10%;
+}
+
+.cimg{
+    width: 148px;
+    height: 85px;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+
+.table{
+    padding: 2% 10%;
+    width: 900px;
+    margin: 0% 5%;
+}
+
+.cheading{
+    margin: 2% 2%;
+    font-family: 'Playfair Display', serif;
+}
+
+.contain{
+    width: 900px;
+}
+
+.coursebtn{
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .dropdown-menu{
+    right: 0;
+    left: auto;
+  }
+  .cbtn{
+      margin: 5px;
+  }
+
+  .form1{
+      
+      display: inline;
+  }
+
+  .displayrating{
+      color: white;
+  }
+
+  .treview{
+      color: white;
+      display: inline;
+  }
+
+  div.disabled
+{
+  pointer-events: none;
+
+  opacity: 0.5;
+  background: #CCC;
+}
+
+div[disabled]
+{
+  pointer-events: none;
+  opacity: 0.7;
+}

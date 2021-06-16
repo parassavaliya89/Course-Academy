@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="review.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8a48fceb00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="onecourse.css">
+
+</head>
+
+<body>
+    <div class="frontteacher">
+        <section id="title">
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand brandname" href=""><i class="fas fa-user-graduate "></i> Course Academy</a>
+                <button class="navbar-toggler searchbox" type="button" data-toggle="" data-target="" aria-controls=""
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <input type="text" name="search" placeholder="Search.." class="searchtext">
+                    <i class="fas fa-search searchbtn"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <form method="GET" action="/">
+                                <button class="nav-link navname coursebtn">Home</button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <form method="GET" action="/course">
+                                <button class="nav-link navname coursebtn">Courses</button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navname" href="">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navname" href="">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown navname">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Profile
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <form method="GET" action="/login">
+                                <button class="btn btn-outline-warning ">Login</button>
+                            </form>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </nav>
+        </section>
+    </div>
+
+    <div class="course row">
+        <div class="col-md-4 coursepic">
+
+            <video class="img1 img-fluid" controls>
+                <source src="./uploads/<%=ocourse[0].titleimage%>" type="video/mp4" class="">
+            </video>
+            <div>
+                <h3>$<%=ocourse[0].courseprice%>
+                </h3>
+                <form action="/payment" method="POST">
+                    <button class="btn btn-dark btn1" value="<%=ocourse[0]._id%>" name="buy"
+                        onclick="this.form.submit()">Buy now</button>
+                </form>
+                <button class="btn btn-outline-secondary btn1">Add to Cart</button>
+                
+            </div>
+
+        </div>
+        <div class="col-md-6 coursedetails">
+            <h2 class="ctitle cdetails">
+                <%=ocourse[0].coursetitle%>
+            </h2>
+            <h5 class="cdescription cdetails">
+                <%=ocourse[0].coursedescription%>
+            </h5>
+            <h5 class="csubtitle cdetails">
+                <%=ocourse[0].coursesubtitle%>
+            </h5>
+            <div class="author cdetails">Created By: <%=ocourse[0].courseauthor%>
+            </div>
+            <div class="lecture cdetails">
+                <%=ocourse[0].totalvideo%> Video Lectures
+            </div>
+            <div class="lecture cdetails">
+                <%=ocourse[0].totaluser%> Students
+            </div>
+
+            <div class="displayrating cdetails">
+                <%if(ocourse[0].finalrating){%>
+                    <%var n=ocourse[0].finalrating%>
+
+                        <%var a=parseInt(ocourse[0].finalrating)%>
+                            <%for(let i=0;i<a;i++){%>
+                                <i class="fas fa-star star"></i>
+                                <%}%>
+
+                                    <%var b=n-a%>
+                                        <%if(b>0){%>
+                                            <i class="fas fa-star-half-alt star"></i>
+                                            <%}%>
+                                                <%var c=5-n%>
+
+                                                    <%for(let i=0;i<parseInt(c);i++){%>
+                                                        <i class="far fa-star star"></i>
+                                                        <%}%>
+                                                            <p class="treview">
+                                                                <%=ocourse[0].finalrating%>
+                                                            </p>
+                                                            <p class="treview">(<%=ocourse[0].review.length%> reviews)
+                                                            </p>
+                                                            <%}%>
+
+
+                                                                <%if(!ocourse[0].finalrating){%>
+                                                                    <i class="far fa-star star"></i>
+                                                                    <i class="far fa-star star"></i>
+                                                                    <i class="far fa-star star"></i>
+                                                                    <i class="far fa-star star"></i>
+                                                                    <i class="far fa-star star"></i>
+                                                                    <i class="noreview cdetails">No review yet</i>
+                                                                    <%}%>
+
+
+               
+
+
+            </div>
+
+
+            <%if(diff=="teacher"){%>
+                <form method="POST" action="/addexam" class="form1">
+                    <button class="btn btn-md btn-light cbtn" name="courseexam" value="<%=ocourse[0]._id%>"
+                        type="submit">Add Exam</button>
+                </form>
+                <%}%>
+                <%if(user!=''){%>
+                    <%if(diff=="student"){%>
+                        <%for(let i=0;i<user[0].mycourse.length;i++){%>
+                            <%if(user[0].mycourse[i].courseid==ocourse[0]._id){%>
+                                <%if(user[0].mycourse[i].responseid==''){%>
+                                    <form method="POST" action="/startquiz" class="form1">
+                                        <button class="btn btn-md btn-light cbtn" name="quizid"
+                                            value="<%=ocourse[0]._id%>" type="submit">Start
+                                            Quiz</button>
+                                    </form>
+                                    <%break;%>
+
+                                    <%}%>
+                                        <%if(user[0].mycourse[i].responseid!=''){%>
+                                            <form method="POST" action="/viewscore" class="form1">
+                                                <button class="btn btn-md btn-light cbtn" name="quizid"
+                                                    value="<%=ocourse[0]._id%>" type="submit">View Score
+                                                </button>
+                                            </form>
+                                            <form method="POST" action="/certificate" class="form1">
+                                                <button class="btn btn-md btn-light cbtn" name="courseid"
+                                                    value="<%=ocourse[0]._id%>"
+                                                    onclick="this.form.submit() > <i class = " fas fa-award"></i> Get
+                                                    Certificate</button>
+                                            </form>
+                                            <%break;%>
+                                            <%}%>
+                                                <%}%>
+
+                                                    <%}%>
+
+                                                        <%}%>
+                                                        <%}%>
+
+
+
+                                                            <%if(diff=="teacher"){%>
+                                                                <form method="POST" action="/startquiz" class="form1">
+                                                                    <button class="btn btn-md btn-light cbtn"
+                                                                        name="quizid" value="<%=ocourse[0]._id%>"
+                                                                        type="submit">View
+                                                                        Quiz</button>
+                                                                </form>
+                                                                <%}%>
+        </div>
+    </div>
+     <%if(done==1){%>
+            <div class=" table">
+                <h1 class="cheading">Course content :</h1>
+                <table class="contain table table-striped">
+                    <%for(let i=0; i<(ocourse[0].coursevideo.length) ;i++){ %>
+                        <tr>
+                            <td>
+                                <video class="cimg" controls>
+                                    <source src="./uploads/<%=ocourse[0].coursevideo[i]%>" type="video/mp4" class="">
+                                </video>
+                            </td>
+                            <td>
+                                <h5>
+                                    <%=ocourse[0].videotitle[i]%>
+                                </h5>
+                            </td>
+                        </tr>
+                        <%}%>
+
+                </table>
+
+
+
+
+            </div>
+        <%}%>
+        <%if(done==0){%>
+            <div class=" table" disabled>
+                <h1 class="cheading">Course content :</h1>
+                <table class="contain table table-striped">
+                    <%for(let i=0; i<(ocourse[0].coursevideo.length) ;i++){ %>
+                        <tr>
+                            <td>
+                                <video class="cimg" controls>
+                                    <source src="./uploads/<%=ocourse[0].coursevideo[i]%>" type="video/mp4" class="">
+                                </video>
+                            </td>
+                            <td>
+                                <h5>
+                                    <%=ocourse[0].videotitle[i]%>
+                                </h5>
+                            </td>
+                        </tr>
+                        <%}%>
+
+                </table>
+            </div>
+            
+        <%}%>
+
+
+                    <div class="feedback">
+                        <h1 class="reviewheading">Customer Review :</h1>
+
+
+                        <%for(let i=0;i<ocourse[0].review.length;i++){%>
+                            <br>
+                            <div class="dreview">
+                                <div class="fas fa-user fa-1x user">
+                                    <%=ocourse[0].review[i].username%>
+                                </div>
+                                <div>
+                                    <%for(let j=0;j<ocourse[0].rating[i];j++){%>
+                                        <i class="fas fa-star star"></i>
+                                        <%}%>
+
+                                </div>
+                                <div>
+                                    <%=ocourse[0].review[i].feedback%>
+                                </div>
+                            </div>
+
+                            <%}%>
+
+
+
+
+                    </div>
+
+
+                    <%if(done==1){%>
+                    <div class="feedback">
+                        <h1 class="rtext">Rate This Course:</h1>
+                        <form action="/review" method="POST">
+
+                            <div class="displaystar">
+
+                                <button id="1" type="button" class="star far fa-star fa-3x" value="1"
+                                    name="star"></button>
+                                <button id="2" type="button" class="star far fa-star fa-3x" value="2"
+                                    name="star"></button>
+                                <button id="3" type="button" class="star far fa-star fa-3x" value="3"
+                                    name="star"></button>
+                                <button id="4" type="button" class="star far fa-star fa-3x" value="4"
+                                    name="star"></button>
+                                <button id="5" type="button" class="star far fa-star fa-3x" value="5"
+                                    name="star"></button>
+                            </div>
+
+
+                            <div class="wreview">
+                                <textarea name="review" rows="3" cols="125"></textarea>
+
+                            </div>
+                            <br>
+                            <button class="btn btn-sm btn-dark sbtn" name="reviewbtn" value="0">Submit</button>
+
+
+
+
+                        </form>
+                    </div>
+                    <%}%>
+                    <%if(done==0){%>
+                        <div class="feedback" disabled>
+                            <h1 class="rtext">Rate This Course:</h1>
+                            <form action="/review" method="POST">
+    
+                                <div class="displaystar">
+    
+                                    <button id="1" type="button" class="star far fa-star fa-3x" value="1"
+                                        name="star"></button>
+                                    <button id="2" type="button" class="star far fa-star fa-3x" value="2"
+                                        name="star"></button>
+                                    <button id="3" type="button" class="star far fa-star fa-3x" value="3"
+                                        name="star"></button>
+                                    <button id="4" type="button" class="star far fa-star fa-3x" value="4"
+                                        name="star"></button>
+                                    <button id="5" type="button" class="star far fa-star fa-3x" value="5"
+                                        name="star"></button>
+                                </div>
+    
+    
+                                <div class="wreview">
+                                    <textarea name="review" rows="3" cols="125"></textarea>
+    
+                                </div>
+                                <br>
+                                <button class="btn btn-sm btn-dark sbtn" name="reviewbtn" value="0">Submit</button>
+    
+    
+    
+    
+                            </form>
+                        </div>
+                        <%}%>
+    
+    
+
+
+
+
+
+
+
+
+
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+                    <script src="review.js"></script>
+</body>
+
+</html>

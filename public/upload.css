@@ -1,0 +1,25 @@
+.main{
+    float: left;
+    padding: 5% 10%;
+    background-color: rgb(226, 226, 241);
+}
+
+.innerclass{
+    margin: 5% 0%;
+}
+
+.main1{
+    float: left;
+    padding: 5% 15%;
+    background-color: rgb(226, 226, 241);
+
+}
+
+body{
+    background-color: rgb(226, 226, 241);
+
+}
+
+.indiv{
+    margin: 2% 0%;
+}

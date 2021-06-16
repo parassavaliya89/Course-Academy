@@ -1,0 +1,45 @@
+.loginform{
+    padding: 7% 35%;
+    background-image:url("../Photos/chex1.png") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.email1{
+    width: 400px;
+}
+
+.password1{
+    width: 400px;
+}
+.logbtn{
+    width: 400px;
+}
+
+.heading{
+    padding:5% 0% ;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.email, .password, .option{
+    padding: 2% 0%;
+}
+
+.teacherbtn, .studentbtn{
+    width: 200px    ;
+    border-radius: 5px;
+    
+}
+
+.forgot{
+    float: right;
+}
+
+.signup{
+    padding: 2% 0%;
+}
+.loginas{
+    float: left;
+}

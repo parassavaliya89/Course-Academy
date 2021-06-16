@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8a48fceb00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="courses.css">
+
+</head>
+
+<body>
+    <div class="frontteacher">
+        <section id="title">
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand brandname" href=""><i class="fas fa-user-graduate "></i> Course Academy</a>
+                <button class="navbar-toggler searchbox" type="button" data-toggle="" data-target="" aria-controls=""
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <input type="text" name="search" placeholder="Search.." class="searchtext">
+                    <i class="fas fa-search searchbtn"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <form method="GET" action="/">
+                                <button class="nav-link navname coursebtn">Home</button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <form method="GET" action="/course">
+                                <button class="nav-link navname coursebtn">Courses</button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navname" href="">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navname" href="">Contact us</a>
+                        </li>
+                        <li class="nav-item dropdown navname">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Profile
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <form method="GET" action="/login">
+                                <button class="btn btn-outline-warning ">Login</button>
+                            </form>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </nav>
+        </section>
+    </div>
+    <div class="row courses">
+
+
+        <div class="col-md-2 sbox">
+            <form action="/select" method="POST">
+                <div class="sheading">Select Category :</div>
+                <div><button name="sbtn" value="Development" class="selectbtn "
+                        onclick="form.submit.this()">Development</button></div>
+                <div><button name="sbtn" value="Business" class="selectbtn  "
+                        onclick="form.submit.this()">Business</button></div>
+                <div><button name="sbtn" value="Finance and Accounting" class="selectbtn "
+                        onclick="form.submit.this()">Finance and Accounting</button></div>
+                <div><button name="sbtn" value="IT and Software" class="selectbtn " onclick="form.submit.this()">IT
+                        and Software</button></div>
+                <div><button name="sbtn" value="Office Productivity" class="selectbtn  "
+                        onclick="form.submit.this()">Office Productivity</button></div>
+                <div><button name="sbtn" value="Design" class="selectbtn " onclick="form.submit.this()">Design</button>
+                </div>
+                <div><button name="sbtn" value="Marketing" class="selectbtn "
+                        onclick="form.submit.this()">Marketing</button></div>
+                <div><button name="sbtn" value="Lifestyle" class="selectbtn "
+                        onclick="form.submit.this()">Lifestyle</button></div>
+                <div><button name="sbtn" value="Photography" class="selectbtn "
+                        onclick="form.submit.this()">Photography</button></div>
+                <div><button name="sbtn" value="Music" class="selectbtn " onclick="form.submit.this()">Music</button>
+                </div>
+                <div><button name="sbtn" value="Operating System" class="selectbtn "
+                        onclick="form.submit.this()">Operating System</button></div>
+                <div><button name="sbtn" value="Programming Language" class="selectbtn "
+                        onclick="form.submit.this()">Programming Language</button></div>
+
+            </form>
+        </div>
+
+
+        <%for(let i=0; i<(allcourse.length) ;i++){ %>
+
+            <div class="course1 col-lg-2 col-md-4 col-sm-6 ">
+                <form action="/viewcourse" method="POST">
+                    <video class="img1" autoplay muted>
+                        <source src="./uploads/<%=allcourse[i].titleimage%>" type="video/mp4" class="">
+                    </video>
+                    <h5>
+                        <%=allcourse[i].coursetitle%>
+                    </h5>
+                    <div>
+                        <%=allcourse[i].courseauthor%>
+                    </div>
+                    <div class="ruppess">
+                        <%=allcourse[i].courseprice%>$
+                    </div>
+                    <div>
+                        <%var n=allcourse[i].finalrating%>
+
+                            <%var a=parseInt(allcourse[i].finalrating)%>
+                                <%for(let i=0;i<a;i++){%>
+                                    <i class="fas fa-star star"></i>
+                                    <%}%>
+
+                                        <%var b=n-a%>
+                                            <%if(b>0){%>
+                                                <i class="fas fa-star-half-alt star"></i>
+                                                <%}%>
+                                                    <%var c=5-n%>
+
+                                                        <%for(let i=0;i<parseInt(c);i++){%>
+                                                            <i class="far fa-star star"></i>
+                                                            <%}%>
+                                                            <%if(!allcourse[i].finalrating){%>                                                          
+                                                                <i class="far fa-star star"></i>
+                                                                <i class="noreview cdetails">No Review Yet</i>
+                                                            <%}%>
+                    </div>
+                    <div class="view">
+                        <button class="btn btn-sm btn-primary btn-block" value="<%=allcourse[i]._id%>" name="button"
+                            onclick="this.form.submit()">View Course</button>
+                    </div>
+                </form>
+            </div>
+
+            <%}%>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

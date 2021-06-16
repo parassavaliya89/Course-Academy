@@ -1,0 +1,69 @@
+
+.qu{
+    
+    margin: 5% 0%;
+   
+}
+
+
+.addsub{
+    text-align: center;
+    margin: 5% 0%;
+}
+
+
+.question{
+    padding: 1% 2%;
+    background-color: rgb(223, 235, 234);
+    border-radius: 10px;
+    margin: 2% 2%;
+    
+}
+.main{
+    padding: 0% 10%;
+}
+
+.que1{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: medium;
+    
+}
+
+
+.textbox{
+    width: 600px;
+}
+
+
+.lowbtn{
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+
+
+.que1:focus-within{
+    background-color: white;
+}
+
+.titletext{
+    font-size: large;
+    padding: 1% 0%;
+}
+
+.label1{
+    font-size: medium;
+}
+
+
+.upper{
+    padding: 1% 2%;
+    background-color: rgb(223, 235, 234);
+   border-radius: 8px;
+    margin: 2% 2%;
+    margin: 5% 0%;
+
+}

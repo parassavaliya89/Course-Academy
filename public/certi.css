@@ -1,0 +1,22 @@
+.maintext{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    right: 10%;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+
+
+
+
+ 
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(39, 38, 38);
+}
+
+

@@ -1,0 +1,144 @@
+.frontteacher{
+    background-image: url(../Photos/teacher4.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.teacherheading1{
+    padding: 14% 5%;
+}
+
+
+.theading1{
+    font-size: 50px;
+}
+
+.tcaption1{
+    font-size: 22px;
+}
+
+.teacherbtn1{
+    margin-top: 2%;
+}
+
+.heading1{
+    padding: 5%;
+    text-align: center;
+}
+
+.teacherfeature{
+    text-align: center;
+}
+
+
+.logo2{
+    margin-left: 55%;
+    
+}
+
+.logo{
+    border: 1px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 5px;
+}
+
+.teacher2{
+    background-image: url(../Photos/teacherbg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;   
+    margin: 5% 0%;
+    color: white;
+
+}
+
+.teacher2::before{
+    content: "";
+    position: absolute;
+    
+    background-color: black;
+    opacity: 0.4;
+}
+
+
+.teacherheading2{
+
+padding-top:5%;
+
+
+}
+
+
+
+.teachercaption2{
+    padding-top: 10%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.teacherstart{
+    padding: 7% 5%;
+    text-align: center;
+
+}
+
+.teacherstartcaption{
+font-size: 20px;  
+padding: 2% 2%;  
+}
+
+.coursebtn{
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .dropdown-menu{
+    right: 0;
+    left: auto;
+  }
+
+
+  .fheading{
+    font-family: 'Lobster', cursive;
+    
+  
+  }
+
+
+  .feature-box{
+  
+    padding: 10px  ;
+    margin-top: 50px;
+    padding-left: 5px;
+   
+  }
+  
+  
+  .subtopic{
+    
+  }
+
+  .heading{
+    text-align: center;
+  }
+  
+  .writing{
+    padding: 10% 0%;
+  }
+  
+  .feature{
+    margin: 0% 5%;
+    
+  }
+
+  .featureimage{
+    text-align: center;
+    width: 400px;
+  }

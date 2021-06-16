@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="exam.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8a48fceb00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="main ">
+
+
+
+
+
+        <form action="/check" method="POST">
+            <div class="upper">
+                <label placeholder="Form Title" name="title" class="que1 textbox titletext">
+                    <%=printexam[0].title%>
+                </label>
+                <label placeholder="Form Description" name="description" class="que1 textbox ">
+                    <%=printexam[0].description%>
+                        </printexam.description>
+                </label>
+            </div>
+            <div class="qu">
+                <%for(let i=0; i<(printexam[0].question.length) ;i++){ %>
+                    <div class="question" id="question0">
+                        <div class="quein">
+                            <label class="label1">Q. </label>
+                            <label  placeholder="Question" class="que1 textbox" name="question">
+                                <%=printexam[0].question[i]%>
+                            </label>
+                            <label  name="marks" class="que1" placeholder="Marks" size="5">
+                                <%=printexam[0].marks[i]%>
+                            </label>
+                            <label class="label1">Marks</label>
+                            <%for(let j=0; j<(printexam[0].option[i].length) ;j++){ %>
+                                <div class="addoption">
+                                    <input type="radio" class="radiobtn" name="optionradio[<%=i%>]" value="0">
+                                    <label placeholder="Option" class="que1 textbox"
+                                        name="option[0]"><%=printexam[0].option[i][j]%></label>
+
+                                </div>
+                                <%}%>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <%}%>
+
+
+            </div>
+            <div class="addsub">
+
+                <button type="submit" value="<%=printexam[0]._id%>" class="btn btn-lg btn-dark"  name="submit" >Submit</button>
+            </div>
+        </form>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="exampaper.js"></script>
+</body>
+
+</html>

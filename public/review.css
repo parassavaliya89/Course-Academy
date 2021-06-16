@@ -1,0 +1,71 @@
+.mainpage{
+    color: red;
+}
+
+.star,.gstar{
+    background: none;
+    border: none;
+    outline: none;
+    color: gold;
+    
+}
+
+
+.star:focus-within,.gstar:focus-within{
+    background: none;
+    border: none;
+    outline: none;
+
+}
+
+.review{
+    text-align: center;
+    margin:7% ;
+}
+
+.rtext{
+
+font-family: 'Playfair Display', serif;
+}
+
+.wreview{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.sbtn{
+    float:right;
+    
+    
+}
+
+
+.noreview{
+    color: white;
+}
+
+
+.feedback{
+    margin: 4% 17%;
+}
+
+.reviewheading{
+    font-family: 'Playfair Display', serif;
+    margin: 3% 0%;
+
+}
+
+.displaystar{
+    text-align: center;
+    margin: 8% 0%;
+}
+
+.cusreview{
+    padding: 3% 0%;
+}
+
+.dreview{
+    background-color: rgb(218, 218, 233);
+    padding: 2% 2%;
+    border-radius: 5px;
+}
